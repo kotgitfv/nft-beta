@@ -1,0 +1,59 @@
+.promo {
+    padding-block: var(--padding-block-size);
+    .promo__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        gap: 30px;
+        .promo__text {
+            .promo__title {
+                color: var(--light);
+                font-size: var(--main-title-size);
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: capitalize;
+            }
+            .promo__subtitle {
+                margin-top: 20px;
+            }
+        }
+        .promo__card {
+            grid-column: 2/3;
+            grid-row: 1/4;
+            background: var(--dark-gray);
+            border-radius: 20px;
+            .promo__card-img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px 20px 0 0;
+            }
+            .promo__card-text {
+                padding: 22px 20px;
+            }
+            @include up-animation;
+        }
+        .promo__btn {
+            max-width: 224px;
+            padding: 19px 0;
+        }
+        .promo__info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .promo__info-item {
+                .promo__info-value {
+                    font-size: 28px;
+                    font-weight: 600;
+                    font-family: var(--space-mono);
+                    color: var(--light);
+                }
+                .promo__info-title {
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    color: var(--light);
+                }
+            }
+        }
+    }
+}

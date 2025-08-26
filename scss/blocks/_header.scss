@@ -1,0 +1,41 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--dark);
+    padding: var(--header-block-padding) var(--header-inline-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 50px;
+        li {
+            a {
+                text-decoration: none;
+                color: var(--light);
+                line-height: 140%;
+                transition: 0.3s all;
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    background: var(--purple);
+                    transition: 0.3s all;
+                }
+                &:hover::after {
+                    width: 100%;
+                } 
+            }
+            button {
+                padding: 19px 30px;
+            }
+        }
+    }
+    .header__burger {
+        display: none;
+    }
+}

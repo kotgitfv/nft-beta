@@ -1,0 +1,85 @@
+.footer {
+    background: var(--dark-gray);
+    padding-block: 40px;
+    .footer__items {
+        height: 100%;
+        .footer__content {
+            display: flex;
+            // grid-template-columns: 327.41px 240px 420px;
+            gap: 31px;
+            .footer__item-logo {
+                display: block;
+                margin-bottom: 12px;
+            }
+            .footer__descr {
+                margin-top: 30px;
+            }
+            .footer__item-text {
+                color: #cccccc;
+                line-height: 140%;
+                text-decoration: none;
+            }
+            .footer__item-social {
+                margin-top: 20px;
+                .footer__item-social_icons {
+                    margin-top: 15px;
+                    display: flex;
+                    gap: 10px;
+                    a {
+                        font-size: 20px;
+                        color: #cccccc;
+                        text-decoration: none;
+                        transition: 0.3s all;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .footer__item-title {
+                font-family: var(--space-mono);
+                font-size: 22px;
+                font-weight: 700;
+                color: var(--light);
+                margin-bottom: 25px;
+            }
+            .footer__item-list {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                li {
+                    a {
+                        transition: 0.3s all;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .footer__item-form {
+                margin-top: 20px;
+                max-width: 420px;
+            }
+            .footer__item:nth-child(1) {
+                max-width: 327.41px;
+            }
+            .footer__item:nth-child(2) {
+                width: 240px;
+            }
+            .footer__item:nth-child(3) {
+                width: 420px;
+                .footer__item-text {
+                    max-width: 330px;
+                }
+            }
+        }
+        .footer__down {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray);
+            font-size: 12px;
+            color: #cccccc;
+        }
+    }
+}

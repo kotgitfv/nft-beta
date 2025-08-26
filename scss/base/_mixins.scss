@@ -1,0 +1,119 @@
+.full_btn_style {
+    border-radius: 20px;
+    background: var(--purple);
+    border: 2px solid var(--purple);
+    color: var(--light);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s all;
+    &:hover {
+        background: none;
+        i {
+            color: var(--purple);
+        }
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.empty_btn_style {
+    background: none;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    transition: 0.3s all;
+    i {
+        color: var(--purple);
+    }
+    &:hover {
+        background: var(--purple);
+        i {
+            color: var(--light);
+        }
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.title {
+    font-size: var(--title-size);
+    font-weight: 600;
+    color: var(--light);
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    color: var(--light);
+    font-size: var(--subtitle-size);
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.little_title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--light);
+    text-transform: capitalize;
+}
+
+.owner_style {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--light);
+}
+
+@mixin up-animation {
+    cursor: pointer;
+    transition: 0.4s all;
+    &:hover {
+        transform: translate(10px, -10px);
+        box-shadow: -5px 5px 15px 5px #000;
+    }
+}
+
+.heading_style {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    button {
+        padding: 19px 50px;
+    }
+}
+
+.form_style {
+    position: relative;
+    display: flex;
+    input {
+        min-height: 60px;
+        width: 100%;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+    }
+    button {
+        position: absolute;
+        right: 0;
+        min-height: 60px;
+        padding: 19px 50px;
+        &:hover {
+            background: var(--light);
+            color: var(--purple);
+        }
+    }
+}

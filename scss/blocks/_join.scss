@@ -1,0 +1,24 @@
+.join {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .join__items {
+        background: var(--dark-gray);
+        border-radius: 20px;
+        padding: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        .join__img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        } 
+        .join__content {
+            .join__form {
+                margin-top: 40px;
+                
+            }
+        }
+    }
+}

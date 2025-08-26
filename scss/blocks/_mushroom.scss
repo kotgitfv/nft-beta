@@ -1,0 +1,77 @@
+.mushroom {
+    padding-top: 360px;
+    padding-bottom: 60px;
+    background: linear-gradient(
+            180deg,
+            rgba(162.0000457763672, 89.00000762939453, 255, 0),
+            rgba(162, 89, 255, 1) 100%
+        ),
+        url('../img/mushroom-bg.png') center center/cover no-repeat;
+    .mushroom__items {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        .mushroom__owner {
+            padding: 10px 20px;
+            background: var(--dark);
+            border-radius: 20px;
+        }
+        .mushroom__title {
+            color: var(--light);
+            font-size: 51px;
+            font-weight: 600;
+            line-height: 110%;
+            text-transform: capitalize;
+        }
+        .mushroom__timer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: #3B3B3B80;
+            border-radius: 20px;
+            padding: 30px;
+            font-family: var(--space-mono);
+            color: var(--light);
+            .mushroom__timer-title {
+                font-size: 12px;
+                font-family: var(--space-mono);
+            }
+            .mushroom__timer-content {
+                margin-top: 10px;
+                display: flex;
+                align-items: start;
+                gap: 10px;
+                font-weight: 700;
+                font-size: 28px;
+                .mushroom__timer-item {
+                    .mushroom__timer-num {
+                        font-size: 38px;
+                    }
+                    .mushroom__timer-name {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            } 
+        }
+        .mushroom__btn {
+            padding: 19px 50px;
+            background: var(--light);
+            color: var(--dark);
+            font-weight: 600;
+            border-color: var(--light);
+            i {
+                color: var(--purple);
+            }
+            &:hover {
+                background: none;
+                color: var(--light);
+                i {
+                    color: var(--light);
+                }
+            }
+        }
+    }
+}
